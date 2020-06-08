@@ -27,7 +27,7 @@ jobs:
       uses: actions/setup-node@v2-beta
       with: 
         node-version: 12
-    - name: Install NPM
+    - name: Install NPM  # It was causing error without it
       run: npm install
 
     # Runs a set of commands using the runners shell
